@@ -1,0 +1,438 @@
+@import "base/typography";
+
+body{
+    font: 'Lato',sans-serif;
+    padding:0;
+    margin:0;
+    background-color:white;
+  }
+  
+/* Global */
+    .container{
+        width:100%;
+        overflow:hidden;
+    }
+
+    .button_1{
+        height:38px;
+        background:$color2;
+        border:0;
+        padding-left: 20px;
+        padding-right:20px;
+        color: white;
+    }
+  
+/* Styling for the header/navbar */
+    header {
+        background: black;
+        color:#ffffff;
+        padding-top:20px;
+        min-height:50px;
+        overflow: hidden;
+    }
+
+    header #branding{
+        float:left;
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+  
+    header .highlight, header .current a{
+        color:#ffffff;
+        font-weight:bold;
+    }
+  
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        text-align: center !important;
+        padding: 14px 14px;
+        margin-bottom: 12px;
+        text-decoration: none !important;
+        text-transform: uppercase;
+        font-size:16px;
+        color:#ffffff;
+    }
+
+    .topnav a:hover {
+        color: $color2;
+        text-transform: uppercase;
+    }
+
+    /* Hide the link that should open and close the topnav on small screens */
+    .topnav .icon {
+        display: none;
+        top: 10px;
+        position: absolute;
+    }
+  
+/* Styling for the showcase */
+    #showcase{
+        background-image:url('../images/rollercoaster.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center; 
+        height: 700px;
+    }
+
+    .container{
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .title{
+        font-size:40px;
+        margin-top: 230px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .button {
+        background-color: black;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        border: none;
+        text-align: center;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .button-arrowleft {
+        border-radius: 70%;
+        height: 40px;
+        width: 40px;
+    }
+
+    .button-arrowright {
+        border-radius: 70%;
+        height: 40px;
+        width: 40px;
+    }
+
+    .button-viewcase {
+        width: 150px;
+        border-radius: 40px;
+        height: 40px;
+    }
+
+    .button:hover {
+        background-color: $color2;
+    }
+
+    #parentmousebutton{
+        position: relative;
+    }
+
+    .buttonbottum{
+        background-color: rgb(255, 255, 255);
+        border: none; 
+        height: 54px;
+        width: 54px;
+        position: relative; 
+        margin-top: 170px;
+        text-align: center;
+        border-radius: 70%;
+    }
+
+    .buttonbottum:hover {
+        background-color: $color2;
+    }
+  
+/* Styling for the intro */
+    #intro{
+        padding:15px;
+        color:#000000;
+        background:#ffffff;
+        height: auto;
+        display: inline-block;
+        
+
+        h1{
+            padding-top: 10px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        p{
+            text-align: center;
+            padding-top: 20px;
+            word-wrap: break-word;
+        }
+    }
+  
+/* Styling for the instafeed */
+    .instafeed{
+        background-image:url('../images/insta-wallpaper.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 55px;
+
+        h1{
+            font-size: 30px;
+            font-weight: bold;
+            color: $color4;
+            }
+
+        h2{
+            font-size: 24px;
+            color: white;
+            }
+
+        img{
+            width: 300px;
+            height: 300px;
+            display: block;
+            }
+        }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-content: center;
+    }
+
+    .row > .column {
+        padding: 10px;
+    }
+
+    .row:after {
+        display: inline-block;
+        clear: both;
+    }
+
+    .column{
+        text-align: center;
+        align-content: center;
+        position: relative;
+        width: 300px;
+        display: inline-block;
+        max-inline-size: 1024px;
+        margin-left: 4.5em;
+        box-sizing: border-box;
+    }
+
+    .content {
+        background-color: white;
+        width: 300px;
+    }
+  
+/* Styling for the contact page */
+  
+    #main{
+        background-image: url('../images/contact-bkg.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center; 
+        min-height: 777px;
+        padding-top: 100px;
+    }
+
+    .contact_title h1{
+        font-size: 40px;
+        padding-bottom: 100px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .contact-us {
+        padding: 5px;
+        border-radius: 0 !important;
+    }   
+
+    .form-group {
+        margin-bottom: 25px;
+        border-radius: 0 !important;
+    }
+
+    .form-control {
+        border: 2px solid transparent;
+        height: 50px;
+        border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px;
+        border-radius: 0 !important;
+    }
+
+    .form-control:focus {
+        border-color: #171717;
+        border-radius: 0 !important;
+        font-weight:bold;
+        text-decoration-color: black;
+    }
+
+    .form-control:focus {
+        border-radius: 0 !important;
+        font-weight:bold;
+    }
+
+    .pattern-bg {
+        background-color: rgba(121, 121, 121, 0.5); // Sets to 50% transparent
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .invalid-feedback ,.valid-feedback{
+        font-weight: bold;
+        background-color: $color5;
+    }
+
+    .button-submit{
+        background-color: $color2;
+        width: 150px;
+        border-radius: 40px;
+        height: 40px;
+        margin-top: 50px;
+    }
+
+/* Styling for the footer*/
+    footer{
+        background-color: $color1;
+        text-align: center;
+        height: 100px;  
+    
+
+        a{
+        width: 35px;
+        height: 35px;
+        padding: 0 20px 0 20px;
+        display: inline-block;
+        margin-top: 40px;
+        }
+    }
+
+
+/* MEDIA QUERIES */
+    
+    /* HEADER & NAVBAR */
+        @media screen and (max-width: 768px) {
+            header #branding {
+                display: block;
+                text-align: center;
+                left: 47%;
+                margin-right: 0px;
+                margin-left: 0px;
+                position: absolute;
+                top: 2%;
+            }
+            .navlinks{
+                margin-top: 50px;
+                text-align: center !important;
+            }
+        }
+
+            /* Show the link that contains should open and close the topnav (.icon) */
+        @media screen and (max-width: 768px) {
+            .topnav a:not(:last-child) {
+                display: none;
+                border-top-color: white;
+            }
+            .topnav a.icon {
+                float: left;
+                display: block;
+                top: 10px;
+            }
+        }
+    
+            /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. */
+        @media screen and (max-width: 768px) {
+            .topnav.responsive a.icon {
+                position: absolute;
+                top: 3px;
+                width: 25px;
+                height: 25px;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+            }
+        }
+
+    /* SHOWCASE */
+        @media screen and (min-width: 360px)
+        {
+            #showcase{
+                height: 650px;
+        }
+    
+            .title{
+                left: 40%;
+            }
+        }
+
+        @media screen and (min-width: 768px)
+        {
+            #showcase{
+                height: 650px;
+            }
+        }
+    
+        @media screen and (min-width: 1024px)
+        {
+            #showcase{
+                height: 700px;
+            }
+        }
+
+    /* INTRO */
+        @media screen and (min-width: 320px) {
+            
+            #intro p { 
+                font-size: 1em; 
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+        
+            @media screen and (min-width: 768px) {
+            
+            #intro p { 
+                font-size: 1.4em; 
+                margin-left: 80px;
+                margin-right: 80px;
+            }
+        }
+        
+            @media screen and (min-width: 1024px) {
+            
+            #intro p { 
+                font-size: 1.6em; 
+                margin-left: 250px;
+                margin-right: 250px;
+            }
+        }
+
+    /* INSTAFEED */
+        @media screen and (max-width: 340px) {
+            .column {
+                width: 68%;
+                margin-right: 0px;
+                margin-left: 10px;
+            }
+        }
+    
+        @media screen and (max-width: 1023px) {
+            .column {
+                margin-right: 0px;
+                margin-left: 10px;
+            }
+        }
+    
+        @media screen and (min-width: 1024px) {
+            .column {
+                width: 21.5%;
+            }
+        }
+
+    /* CONTACT PAGE - EMPTY ATM  */
+    /* FOOTER - EMPTY ATM */
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhc2UvX3R5cG9ncmFwaHkuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHdCQUF1QixFQUN4QiIsImZpbGUiOiJhcHAuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xufVxuIl19 */

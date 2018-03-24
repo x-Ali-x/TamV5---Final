@@ -1,0 +1,118 @@
+{% extends 'layouts/application.html' %}
+
+{% block header %}
+<header>
+  <div class="container">
+    <div class="navbar-full">
+      <div class="topnav" id="myTopnav">     
+        <div id="branding">
+          <img src="images/logo-stripe.png">
+        </div> 
+        <div class="navlinks">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="people.html">People</a>
+          <a href="contact.html">Contact</a>
+          <a href="javascript:void(0);" class="icon" style="width:40px; height:40px;" onclick="myFunction()"><img src="images/menu.png"></a>
+        </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+{% block showcase %}
+<section id="showcase">
+  <div class="container">
+    <div class="title">
+      <h1>Walibi</h1>
+    </div>
+      <button class="button button-arrowleft"><p><img src="images/arrow-left.png"></p></button>
+      <button class="button button-viewcase"><p>View case</p></button>                  
+      <button class="button button-arrowright"><p><img src="images/arrow-right.png"></p></button>
+  </div>
+    <div class="parentmousebutton">
+      <div class="container">
+        <button class="buttonbottum button-mouseclick"><p><img src="images/mouse.png"></p></button>
+      </div>
+    </div>
+</section>
+{% endblock%}
+
+{% block intro %}
+<section id="intro">
+  <div class="container">
+    <h1>WE ARE TAM TAM</h1>
+      <p>Tam Tam is a full service digital agency focusing on Dutch Digital Service Design. We combine strategy, design, technology and interaction to make the digital interactions between company and customer valuable and memorable. We work for awesome brands with a team of 120 digitals from our office in Amsterdam. Making great work and having a blast doing it. That’s what we believe in. </p>
+  </div>
+</section>
+{% endblock %}
+
+{% block instafeed %}
+<section id="instagram">
+  <div class="instafeed">
+    <h1>FOLLOW US ON INSTAGRAM</h1>
+    <h2>@tamtamnl</h2>
+    <div class="row">
+      <div class="center">
+        <div class="column">
+          <div class="content">
+            <img src="images/T1.jpg">
+            <p>Last Thursday emerce organised their own ADE and we were part of it! Where are you gonna party tonight? #ADE#tbt #enight #tamtam #dog #hond #black #brown #tammo</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="images/T2.jpg">
+            <p>We're feeling happier and happier thanks to these nice dutch flowers we received from Florensis! #holland #flowers #doordebloemenofficenietmeerzien #settingthebloemetjesoutside</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="images/T3.jpg">
+            <p>We are VERY VERY happy with our Silver Lovie Award and People's Lovies Winner for the Docters without borders website! #lovies #tamtamhome #proud #celebration</p>
+          </div>
+        </div>
+      <div class="column">
+        <div class="content">
+          <img src="images/T4.jpg">
+          <p>Thanks @radio538 and @maxpinas for bringing us friday beats with our brand new #marshall speakers! #friyay #gift #speaker #tamtamhome</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="images/T5.jpg">
+          <p>Friyay! Coffee anyone? #almostweekend #tamtamhome #koffiemax #latteart #lekker #warm #winter #honger #zon #skyline</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="images/T6.jpg">
+          <p>TamTam Talks Search Edition! First edition with our new colleagues from Expand Online👌💪🏻 #tamtamhome #tttalks #breakfast #search</p>
+        </div>
+      </div>
+    </div>
+    </div>        
+  </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+<footer>
+  <a href="https://www.facebook.com/tamtamnl/?ref=br_rs"><img src="images/facebook.png"></a>
+  <a href="https://twitter.com/TamTamNL"><img src="images/twitter.png"></a>
+  <a href="https://www.instagram.com/tamtamnl/"><img src="images/instagram.png"></a>      
+</footer>
+{% endblock %}
+
+{% block javascript %}
+  <script>function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }</script>
+{% endblock %}
